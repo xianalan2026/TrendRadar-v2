@@ -136,7 +136,7 @@ notification:
     feishu:
       enabled: true
       webhook_url: "${FEISHU_WEBHOOK_URL}"   # 从 GitHub Secrets 读取
-      sign_secret: "${FEISHU_SIGN_SECRET}"   # 签名校验密钥（教主钦定开启）
+      # sign_secret: removed (timestamp sync issue)   # 签名校验密钥（教主钦定开启）
       message_type: "interactive"            # 飞书支持交互式卡片
       at_user_ids: []                        # 不 @ 任何人
 
